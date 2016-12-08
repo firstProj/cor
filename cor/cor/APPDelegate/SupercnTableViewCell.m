@@ -47,9 +47,7 @@
         [_button2 setTitle:model.like_count forState:UIControlStateNormal];
         [_button2 setImage:[UIImage imageNamed:@"recomicon_dock_night"] forState:UIControlStateNormal];
         
-        [_button2  setImage:[UIImage imageNamed:@"recomicon_dock_press"] forState:UIControlStateHighlighted];
-        
-        [_button3 setTitle:model.comment_count forState:UIControlStateNormal];
+        [_button3 setTitle:[NSString stringWithFormat:@"%ld",(long)model.comment_count] forState:UIControlStateNormal];
         [_button3 setImage: [UIImage imageNamed:@"commenticon_profile_night"] forState:UIControlStateNormal];
 //        _button3.titleLabel.text=model.comment_count;
         

@@ -9,6 +9,7 @@
 #import "TabbarcnViewController.h"
 #import "SupercnViewController.h"
 #import "WOViewController.h"
+#import "GuanzhuViewController.h"
 @interface TabbarcnViewController ()
 
 @end
@@ -36,14 +37,15 @@
 }
 - (void)addChildVC:(UIViewController *)childViewController title:(NSString *)title image:(NSString *)image{
     
-    childViewController.title = title;
-    childViewController.tabBarItem.image = [UIImage imageNamed:image];
-    UINavigationBar *bar = [UINavigationBar appearance];
-    [bar setBackgroundImage:[UIImage imageNamed:@"xzzm_Me_headerBg"] forBarMetrics:UIBarMetricsDefault];
-    
     UINavigationController *con = [[UINavigationController alloc] initWithRootViewController:childViewController];
     
     [self addChildViewController:con];
+    
+    childViewController.title = title;
+    childViewController.tabBarItem.image = [UIImage imageNamed:image];
+   // UINavigationBar *bar = [UINavigationBar appearance];
+   // [bar setBackgroundImage:[UIImage imageNamed:@"xzzm_Me_headerBg"] forBarMetrics:UIBarMetricsDefault];
+    
     
 }
 

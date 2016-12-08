@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface GuanzhuViewController : UIViewController
-
+//存放已关注的人
+@property (nonatomic,strong) NSMutableArray * haArr;
 @end

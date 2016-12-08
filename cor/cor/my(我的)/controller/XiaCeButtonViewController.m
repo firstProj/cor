@@ -15,7 +15,6 @@
 @end
 
 @implementation XiaCeButtonViewController
-@synthesize actionSheet = _actionSheet;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -53,11 +52,11 @@
     textView.delegate = self;
     [FanKuiView addSubview:textView];
     
-    _shangchuanButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    _shangchuanButton.frame = CGRectMake(SCREENWIDTH - 80, 10, 50, 50);
-    [_shangchuanButton setImage:[UIImage imageNamed:@"shangchuan.png"] forState:UIControlStateNormal];
-    [_shangchuanButton addTarget:self action:@selector(shangchuanzhaopian) forControlEvents:UIControlEventTouchUpInside];
-    [FanKuiView addSubview:_shangchuanButton];
+    UIButton * shangchuanButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    shangchuanButton.frame = CGRectMake(SCREENWIDTH - 80, 10, 50, 50);
+    [shangchuanButton setImage:[UIImage imageNamed:@"shangchuan.png"] forState:UIControlStateNormal];
+    [shangchuanButton addTarget:self action:@selector(shangchuanzhaopian) forControlEvents:UIControlEventTouchUpInside];
+    [FanKuiView addSubview:shangchuanButton];
     
     
     UITextView * textView1 = [[UITextView alloc]initWithFrame:CGRectMake(10, 10, SCREENWIDTH - 110, 40)];
@@ -106,81 +105,8 @@
 }
 //上传照片的方法
 - (void)shangchuanzhaopian{
-    [self callActionSheetFunc];
-}
-/*调用ActionSheet*/
-- (void)callActionSheetFunc{
-    if([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]){
-        self.actionSheet = [[UIActionSheet alloc] initWithTitle:@"选择图像" delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:nil otherButtonTitles:@"拍照", @"从相册选择", nil];
-    }else{
-        self.actionSheet = [[UIActionSheet alloc] initWithTitle:@"选择图像" delegate:self cancelButtonTitle:@"取消"destructiveButtonTitle:nil otherButtonTitles:@"从相册选择", nil];
-    }
     
-    self.actionSheet.tag = 1000;
-    [self.actionSheet showInView:self.view];
 }
-//上传照片的方法
-- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex{
-    if (actionSheet.tag == 1000) {
-        NSUInteger sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
-        // 判断是否支持相机
-        if([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
-            switch (buttonIndex) {
-                case 0:
-                    //来源:相机
-                    sourceType = UIImagePickerControllerSourceTypeCamera;
-                    break;
-                case 1:
-                    //来源:相册
-                    sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
-                    break;
-                case 2:
-                    return;
-            }
-        }
-        else {
-            if (buttonIndex == 2) {
-                return;
-            } else {
-                sourceType = UIImagePickerControllerSourceTypeSavedPhotosAlbum;
-            }
-        }
-        // 跳转到相机或相册页面
-        UIImagePickerController *imagePickerController = [[UIImagePickerController alloc] init];
-        imagePickerController.delegate = self;
-        imagePickerController.allowsEditing = YES;
-        imagePickerController.sourceType = sourceType;
-        
-        [self presentViewController:imagePickerController animated:YES completion:^{
-            
-        }];
-    }
-}
-//点击选择Choose
-- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info{
-    
-    NSLog(@"%@",info);
-    
-    if ([info[@"UIImagePickerControllerMediaType"] isEqualToString:@"public.image"]) {
-        
-        UIImage * image = info[@"UIImagePickerControllerOriginalImage"];
-        
-        //UIImageView * imageView = [[UIImageView alloc] init];
-        //imageView.image = image;
-        //[self.view addSubview:imageView];
-        
-        [_shangchuanButton setImage:image forState:UIControlStateNormal];
-    }
-    [self dismissViewControllerAnimated:YES completion:nil];
-}
-//点击取消Cancel
-- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker{
-    NSLog(@"取消");
-    
-    [self dismissViewControllerAnimated:YES completion:nil];
-}
-
-
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     //实现该方法是需要注意view需要是继承UIControl而来的
     [self.view endEditing:YES];
@@ -238,12 +164,10 @@
 //    return YES;
 //}
 
-
-//根据输入的文字改变UITextView的自适应高度
 - (float) heightForTextView: (UITextView *)textView WithText: (NSString *) strText{
     CGSize constraint = CGSizeMake(textView.contentSize.width , CGFLOAT_MAX);
     CGRect size = [strText boundingRectWithSize:constraint options:(NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading) attributes:@{NSFontAttributeName: [UIFont systemFontOfSize:14]}context:nil];
-    float textHeight = size.size.height + 0.0;
+    float textHeight = size.size.height + 22.0;
     return textHeight;
 }
 

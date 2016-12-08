@@ -41,7 +41,7 @@
 //中图
 @property(nonatomic,strong)SuperModel2 *middle_image;
 //推荐数
-@property(nonatomic,copy)NSString *comment_count;
+@property(nonatomic,assign)NSInteger comment_count;
 
 
 @property(nonatomic,assign)CGFloat cellHeight;

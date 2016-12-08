@@ -53,12 +53,16 @@
 		43BA24861DF90B4C003E4D4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43BA24771DF90B4C003E4D4F /* Main.storyboard */; };
 		43BA24871DF90B4C003E4D4F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43BA247B1DF90B4C003E4D4F /* Info.plist */; };
 		43BA24881DF90B4C003E4D4F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 43BA247C1DF90B4C003E4D4F /* main.m */; };
+		43BA249A1DF96737003E4D4F /* AddCareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43BA248E1DF96737003E4D4F /* AddCareViewController.m */; };
+		43BA249B1DF96737003E4D4F /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43BA24901DF96737003E4D4F /* SearchViewController.m */; };
+		43BA249C1DF96737003E4D4F /* GuanzhuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43BA24921DF96737003E4D4F /* GuanzhuViewController.m */; };
+		43BA249D1DF96737003E4D4F /* careModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 43BA24951DF96737003E4D4F /* careModel.m */; };
+		43BA249E1DF96737003E4D4F /* CareTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 43BA24981DF96737003E4D4F /* CareTableViewCell.m */; };
+		43BA249F1DF96737003E4D4F /* CareTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43BA24991DF96737003E4D4F /* CareTableViewCell.xib */; };
 		700C372A1DF92A2D00FF7E7B /* Newbutton2.m in Sources */ = {isa = PBXBuildFile; fileRef = 700C37291DF92A2D00FF7E7B /* Newbutton2.m */; };
 		700C372F1DF92A5C00FF7E7B /* NetWorkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 700C372C1DF92A5C00FF7E7B /* NetWorkManager.m */; };
 		700C37301DF92A5C00FF7E7B /* NetworkManagercn.m in Sources */ = {isa = PBXBuildFile; fileRef = 700C372E1DF92A5C00FF7E7B /* NetworkManagercn.m */; };
 		700C37981DF92A9A00FF7E7B /* NewcnButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 700C37321DF92A9A00FF7E7B /* NewcnButton.m */; };
-		700C37991DF92A9A00FF7E7B /* GuanzhuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 700C37391DF92A9A00FF7E7B /* GuanzhuViewController.m */; };
-		700C379A1DF92A9A00FF7E7B /* WodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 700C373B1DF92A9A00FF7E7B /* WodeViewController.m */; };
 		700C379B1DF92A9A00FF7E7B /* model1.m in Sources */ = {isa = PBXBuildFile; fileRef = 700C37411DF92A9A00FF7E7B /* model1.m */; };
 		700C379C1DF92A9A00FF7E7B /* Model11.m in Sources */ = {isa = PBXBuildFile; fileRef = 700C37431DF92A9A00FF7E7B /* Model11.m */; };
 		700C379D1DF92A9A00FF7E7B /* UIView+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 700C37461DF92A9A00FF7E7B /* UIView+Category.m */; };
@@ -135,9 +139,9 @@
 		1672A1091DF93539002A791D /* 返回1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "返回1.png"; sourceTree = "<group>"; };
 		1672A10B1DF93539002A791D /* DengLuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DengLuViewController.h; sourceTree = "<group>"; };
 		1672A10C1DF93539002A791D /* DengLuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DengLuViewController.m; sourceTree = "<group>"; };
-		1672A10D1DF93539002A791D /* GUANKANTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GUANKANTableViewCell.h; path = ../controller/GUANKANTableViewCell.h; sourceTree = "<group>"; };
-		1672A10E1DF93539002A791D /* GUANKANTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GUANKANTableViewCell.m; path = ../controller/GUANKANTableViewCell.m; sourceTree = "<group>"; };
-		1672A10F1DF93539002A791D /* GUANKANTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GUANKANTableViewCell.xib; path = ../controller/GUANKANTableViewCell.xib; sourceTree = "<group>"; };
+		1672A10D1DF93539002A791D /* GUANKANTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GUANKANTableViewCell.h; sourceTree = "<group>"; };
+		1672A10E1DF93539002A791D /* GUANKANTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GUANKANTableViewCell.m; sourceTree = "<group>"; };
+		1672A10F1DF93539002A791D /* GUANKANTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GUANKANTableViewCell.xib; sourceTree = "<group>"; };
 		1672A1101DF93539002A791D /* GUANKANViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GUANKANViewController.h; sourceTree = "<group>"; };
 		1672A1111DF93539002A791D /* GUANKANViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GUANKANViewController.m; sourceTree = "<group>"; };
 		1672A1121DF93539002A791D /* QUDENGLUViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QUDENGLUViewController.h; sourceTree = "<group>"; };
@@ -183,6 +187,17 @@
 		43BA24781DF90B4C003E4D4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		43BA247B1DF90B4C003E4D4F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		43BA247C1DF90B4C003E4D4F /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		43BA248D1DF96737003E4D4F /* AddCareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCareViewController.h; sourceTree = "<group>"; };
+		43BA248E1DF96737003E4D4F /* AddCareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCareViewController.m; sourceTree = "<group>"; };
+		43BA248F1DF96737003E4D4F /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		43BA24901DF96737003E4D4F /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		43BA24911DF96737003E4D4F /* GuanzhuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuanzhuViewController.h; sourceTree = "<group>"; };
+		43BA24921DF96737003E4D4F /* GuanzhuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuanzhuViewController.m; sourceTree = "<group>"; };
+		43BA24941DF96737003E4D4F /* careModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = careModel.h; sourceTree = "<group>"; };
+		43BA24951DF96737003E4D4F /* careModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = careModel.m; sourceTree = "<group>"; };
+		43BA24971DF96737003E4D4F /* CareTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CareTableViewCell.h; sourceTree = "<group>"; };
+		43BA24981DF96737003E4D4F /* CareTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CareTableViewCell.m; sourceTree = "<group>"; };
+		43BA24991DF96737003E4D4F /* CareTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CareTableViewCell.xib; sourceTree = "<group>"; };
 		700C37281DF92A2D00FF7E7B /* Newbutton2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Newbutton2.h; path = cor/APPDelegate/Newbutton2.h; sourceTree = SOURCE_ROOT; };
 		700C37291DF92A2D00FF7E7B /* Newbutton2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Newbutton2.m; path = cor/APPDelegate/Newbutton2.m; sourceTree = SOURCE_ROOT; };
 		700C372B1DF92A5C00FF7E7B /* NetWorkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NetWorkManager.h; path = cor/APPDelegate/NetWorkManager.h; sourceTree = SOURCE_ROOT; };
@@ -191,10 +206,6 @@
 		700C372E1DF92A5C00FF7E7B /* NetworkManagercn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NetworkManagercn.m; path = cor/APPDelegate/NetworkManagercn.m; sourceTree = SOURCE_ROOT; };
 		700C37311DF92A9A00FF7E7B /* NewcnButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewcnButton.h; path = cor/APPDelegate/NewcnButton.h; sourceTree = SOURCE_ROOT; };
 		700C37321DF92A9A00FF7E7B /* NewcnButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewcnButton.m; path = cor/APPDelegate/NewcnButton.m; sourceTree = SOURCE_ROOT; };
-		700C37381DF92A9A00FF7E7B /* GuanzhuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuanzhuViewController.h; sourceTree = "<group>"; };
-		700C37391DF92A9A00FF7E7B /* GuanzhuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuanzhuViewController.m; sourceTree = "<group>"; };
-		700C373A1DF92A9A00FF7E7B /* WodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WodeViewController.h; sourceTree = "<group>"; };
-		700C373B1DF92A9A00FF7E7B /* WodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WodeViewController.m; sourceTree = "<group>"; };
 		700C37401DF92A9A00FF7E7B /* model1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = model1.h; sourceTree = "<group>"; };
 		700C37411DF92A9A00FF7E7B /* model1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = model1.m; sourceTree = "<group>"; };
 		700C37421DF92A9A00FF7E7B /* Model11.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model11.h; sourceTree = "<group>"; };
@@ -335,6 +346,9 @@
 			children = (
 				1672A10B1DF93539002A791D /* DengLuViewController.h */,
 				1672A10C1DF93539002A791D /* DengLuViewController.m */,
+				1672A10D1DF93539002A791D /* GUANKANTableViewCell.h */,
+				1672A10E1DF93539002A791D /* GUANKANTableViewCell.m */,
+				1672A10F1DF93539002A791D /* GUANKANTableViewCell.xib */,
 				1672A1101DF93539002A791D /* GUANKANViewController.h */,
 				1672A1111DF93539002A791D /* GUANKANViewController.m */,
 				1672A1121DF93539002A791D /* QUDENGLUViewController.h */,
@@ -367,9 +381,6 @@
 		1672A1231DF93539002A791D /* view */ = {
 			isa = PBXGroup;
 			children = (
-				1672A10D1DF93539002A791D /* GUANKANTableViewCell.h */,
-				1672A10E1DF93539002A791D /* GUANKANTableViewCell.m */,
-				1672A10F1DF93539002A791D /* GUANKANTableViewCell.xib */,
 				1672A1241DF93539002A791D /* ButtonView.h */,
 				1672A1251DF93539002A791D /* ButtonView.m */,
 				1672A1261DF93539002A791D /* WOTableViewCell.h */,
@@ -477,18 +488,11 @@
 		43BA247D1DF90B4C003E4D4F /* screen */ = {
 			isa = PBXGroup;
 			children = (
+				43BA248B1DF96737003E4D4F /* care(关注) */,
 				1672A0F61DF934F2002A791D /* my(我的) */,
-				43BA247E1DF90B4C003E4D4F /* care(关注) */,
 				43BA247F1DF90B4C003E4D4F /* home(首页) */,
 			);
 			path = screen;
-			sourceTree = "<group>";
-		};
-		43BA247E1DF90B4C003E4D4F /* care(关注) */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "care(关注)";
 			sourceTree = "<group>";
 		};
 		43BA247F1DF90B4C003E4D4F /* home(首页) */ = {
@@ -534,6 +538,49 @@
 			path = SDKS;
 			sourceTree = "<group>";
 		};
+		43BA248B1DF96737003E4D4F /* care(关注) */ = {
+			isa = PBXGroup;
+			children = (
+				43BA248C1DF96737003E4D4F /* controller */,
+				43BA24911DF96737003E4D4F /* GuanzhuViewController.h */,
+				43BA24921DF96737003E4D4F /* GuanzhuViewController.m */,
+				43BA24931DF96737003E4D4F /* model */,
+				43BA24961DF96737003E4D4F /* view */,
+			);
+			name = "care(关注)";
+			path = "cor/care(关注)";
+			sourceTree = SOURCE_ROOT;
+		};
+		43BA248C1DF96737003E4D4F /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				43BA248D1DF96737003E4D4F /* AddCareViewController.h */,
+				43BA248E1DF96737003E4D4F /* AddCareViewController.m */,
+				43BA248F1DF96737003E4D4F /* SearchViewController.h */,
+				43BA24901DF96737003E4D4F /* SearchViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		43BA24931DF96737003E4D4F /* model */ = {
+			isa = PBXGroup;
+			children = (
+				43BA24941DF96737003E4D4F /* careModel.h */,
+				43BA24951DF96737003E4D4F /* careModel.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		43BA24961DF96737003E4D4F /* view */ = {
+			isa = PBXGroup;
+			children = (
+				43BA24971DF96737003E4D4F /* CareTableViewCell.h */,
+				43BA24981DF96737003E4D4F /* CareTableViewCell.m */,
+				43BA24991DF96737003E4D4F /* CareTableViewCell.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 		700C37331DF92A9A00FF7E7B /* othertwo */ = {
 			isa = PBXGroup;
 			children = (
@@ -570,10 +617,6 @@
 		700C37371DF92A9A00FF7E7B /* viewcontroller */ = {
 			isa = PBXGroup;
 			children = (
-				700C37381DF92A9A00FF7E7B /* GuanzhuViewController.h */,
-				700C37391DF92A9A00FF7E7B /* GuanzhuViewController.m */,
-				700C373A1DF92A9A00FF7E7B /* WodeViewController.h */,
-				700C373B1DF92A9A00FF7E7B /* WodeViewController.m */,
 			);
 			path = viewcontroller;
 			sourceTree = "<group>";
@@ -956,6 +999,7 @@
 				1672A1371DF93539002A791D /* 按钮图片.png in Resources */,
 				43BA24871DF90B4C003E4D4F /* Info.plist in Resources */,
 				1672A1381DF93539002A791D /* 照片.png in Resources */,
+				43BA249F1DF96737003E4D4F /* CareTableViewCell.xib in Resources */,
 				1672A1331DF93539002A791D /* zuoshangjiao.png in Resources */,
 				43BA24861DF90B4C003E4D4F /* Main.storyboard in Resources */,
 				700C37AD1DF92A9A00FF7E7B /* LICENSE in Resources */,
@@ -1060,6 +1104,8 @@
 				700C37B11DF92A9A00FF7E7B /* TADotView.m in Sources */,
 				1672A1421DF93539002A791D /* QUDENGLUViewController.m in Sources */,
 				700C379E1DF92A9A00FF7E7B /* Onetableviewcell.m in Sources */,
+				43BA249A1DF96737003E4D4F /* AddCareViewController.m in Sources */,
+				43BA249B1DF96737003E4D4F /* SearchViewController.m in Sources */,
 				700C37B71DF92A9A00FF7E7B /* Super1TableViewController.m in Sources */,
 				1672A1451DF93539002A791D /* XiaCeButtonViewController.m in Sources */,
 				43BA24831DF90B4C003E4D4F /* ViewController.m in Sources */,
@@ -1076,7 +1122,6 @@
 				700C37AF1DF92A9A00FF7E7B /* TAAbstractDotView.m in Sources */,
 				700C37C01DF92AAB00FF7E7B /* XuanzhongViewController.m in Sources */,
 				1672A1411DF93539002A791D /* GUANKANViewController.m in Sources */,
-				700C37991DF92A9A00FF7E7B /* GuanzhuViewController.m in Sources */,
 				700C37981DF92A9A00FF7E7B /* NewcnButton.m in Sources */,
 				700C37A01DF92A9A00FF7E7B /* SecondTableViewCell.m in Sources */,
 				700C37A31DF92A9A00FF7E7B /* model3.m in Sources */,
@@ -1087,6 +1132,7 @@
 				700C37B61DF92A9A00FF7E7B /* SNmodel.m in Sources */,
 				700C37A81DF92A9A00FF7E7B /* model4.m in Sources */,
 				700C37BB1DF92A9A00FF7E7B /* Supermodel.m in Sources */,
+				43BA249C1DF96737003E4D4F /* GuanzhuViewController.m in Sources */,
 				43BA24821DF90B4C003E4D4F /* AppDelegate.m in Sources */,
 				700C37BD1DF92A9A00FF7E7B /* TabbarcnViewController.m in Sources */,
 				1672A1471DF93539002A791D /* YiJianViewController.m in Sources */,
@@ -1096,6 +1142,7 @@
 				700C37B81DF92A9A00FF7E7B /* SupercnTableViewCell.m in Sources */,
 				1672A14B1DF93539002A791D /* WOTableViewCell.m in Sources */,
 				700C37A51DF92A9A00FF7E7B /* ThirdTableViewCell.m in Sources */,
+				43BA249E1DF96737003E4D4F /* CareTableViewCell.m in Sources */,
 				700C379F1DF92A9A00FF7E7B /* Model22.m in Sources */,
 				700C37B31DF92A9A00FF7E7B /* SDCollectionViewCell.m in Sources */,
 				1672A1441DF93539002A791D /* WOViewController.m in Sources */,
@@ -1106,8 +1153,8 @@
 				1672A1491DF93539002A791D /* UIButton+countDown.m in Sources */,
 				700C372F1DF92A5C00FF7E7B /* NetWorkManager.m in Sources */,
 				700C379D1DF92A9A00FF7E7B /* UIView+Category.m in Sources */,
+				43BA249D1DF96737003E4D4F /* careModel.m in Sources */,
 				1672A1461DF93539002A791D /* XIHUANViewController.m in Sources */,
-				700C379A1DF92A9A00FF7E7B /* WodeViewController.m in Sources */,
 				1672A13E1DF93539002A791D /* DengLuViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -111,12 +111,8 @@
 
 }
 
-
 - (void)fanhui{
-//    WOViewController * wo = [[WOViewController alloc] init];
-//    [self presentViewController:wo animated:YES completion:nil];
-    
-    
+
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 - (void)buttonXiaAction{
