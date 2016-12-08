@@ -22,7 +22,7 @@ static NSString  *const  cellstring3=@"cell3";
     [super viewDidLoad];
     _array=[NSMutableArray array];
     
-    self.tableView.frame=CGRectMake(0, 100, self.view.width, self.view.height);
+    self.tableView.frame=CGRectMake(0, 100, SCREENWIDTH, SCREENHEIGHT);
     self.tableView.showsHorizontalScrollIndicator=NO;
     self.tableView.delegate=self;
     self.tableView.dataSource=self;

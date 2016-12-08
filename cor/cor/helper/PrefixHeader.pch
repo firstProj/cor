@@ -21,6 +21,13 @@
 //#define MAS_SHORTHAND
 //#define MAS_SHORTHAND_GLOBALS
 
+
+#define SCREENWIDTH  [UIScreen mainScreen].bounds.size.width
+#define SCREENHEIGHT [UIScreen mainScreen].bounds.size.height
+
+//#define MAS_SHORTHAND
+//#define MAS_SHORTHAND_GLOBALS
+
 //http://io.snssdk.com/2/article/v31/stream
 //http://io.snssdk.com/2/article/v30/stream
 //http://io.snssdk.com/2/article/v29/stream

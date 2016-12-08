@@ -8,6 +8,7 @@
 
 #import "TabbarcnViewController.h"
 #import "SupercnViewController.h"
+#import "WOViewController.h"
 @interface TabbarcnViewController ()
 
 @end
@@ -22,7 +23,7 @@
     [self addChildVC:one title:@"首页" image:@"icon_home_page_n"];
     GuanzhuViewController  *guanzhu=[[GuanzhuViewController alloc ]init];
     [self addChildVC:guanzhu title:@"关注" image:@"tabBar_me_icon-1"];
-    WodeViewController  *wode=[[WodeViewController alloc]init];
+    WOViewController  *wode=[[WOViewController alloc]init];
     [self addChildVC:wode title:@"我的" image:@"tabBar_friendTrends_icon-1"];
     
     

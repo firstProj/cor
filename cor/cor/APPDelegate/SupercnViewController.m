@@ -53,7 +53,7 @@ static  NSString *cellstring=@"cell";
     _scrollview.frame=self.view.bounds;
     _scrollview.backgroundColor=[UIColor grayColor];
     _scrollview.delegate=self;
-    _scrollview.contentSize=CGSizeMake(self.childViewControllers.count*self.view.width, 0);
+    _scrollview.contentSize=CGSizeMake(self.childViewControllers.count*414, 0);
     _scrollview.pagingEnabled=YES;
     [self.view addSubview:_scrollview];
     
@@ -86,7 +86,7 @@ static  NSString *cellstring=@"cell";
     UIView  *titleView=[[UIView alloc]init];
     titleView.backgroundColor=[UIColor colorWithWhite:1.0 alpha:0.7];
     
-    titleView.frame=CGRectMake(0, 64, self.view.width, 35);
+    titleView.frame=CGRectMake(0, 64, 414, 35);
     [self.view addSubview:titleView];
     self.titlesView=titleView;
     NSInteger  count=self.childViewControllers.count;
