@@ -1,15 +1,13 @@
 //
-//  ViewController.h
+//  WodeViewController.h
 //  haozheng-xiangmu1
 //
-//  Created by wyzc on 16/11/30.
+//  Created by wyzc on 16/12/1.
 //  Copyright © 2016年 wyzc. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface WodeViewController : UIViewController
 
 @end
-

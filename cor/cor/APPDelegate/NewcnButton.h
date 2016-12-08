@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  NewcnButton.h
 //  haozheng-xiangmu1
 //
 //  Created by wyzc on 16/11/30.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface NewcnButton : UIButton
 
 @end
-
