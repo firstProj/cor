@@ -21,9 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
     [self setupSubs];
-    
     
     // Do any additional setup after loading the view.
 }
@@ -31,12 +29,9 @@
 - (void)setupSubs{
    self.view.backgroundColor = [UIColor whiteColor];
     UITableView * tableView = [[UITableView alloc] initWithFrame:[UIScreen mainScreen].bounds style:UITableViewStylePlain];
-    
     tableView.delegate = self;
     tableView.dataSource = self;
-    
     UIView * view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 414, 50)];
-    
     UILabel * label = [[UILabel alloc] init];
     label.text = @"设置";
     label.textAlignment = NSTextAlignmentCenter;
@@ -64,8 +59,6 @@
         make.left.equalTo(view.mas_left).offset(10);
     }];
     
-    
-    
     UIButton * button1 = [UIButton buttonWithType:UIButtonTypeCustom];
     [button1 setTitle:@"意见反馈" forState:UIControlStateNormal];
     [button1 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
@@ -84,8 +77,6 @@
     
     UIImageView * imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"表尾.png"]];
     tableView.tableFooterView = imageView;
-    
-    
     
     [tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
     
