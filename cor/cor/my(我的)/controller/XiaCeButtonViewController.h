@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface XiaCeButtonViewController : UIViewController
-
+@interface XiaCeButtonViewController : UIViewController<UIImagePickerControllerDelegate,UIActionSheetDelegate,UINavigationControllerDelegate>
+@property(nonatomic,strong)UIButton * shangchuanButton;
+@property (strong, nonatomic) UIActionSheet *actionSheet;
 @end

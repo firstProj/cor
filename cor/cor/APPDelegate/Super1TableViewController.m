@@ -26,7 +26,7 @@ static NSString  *const  cellstring=@"cell";
 
     _array=[NSMutableArray array];
     
-    self.tableView.frame=CGRectMake(0, 100, SCREENWIDTH, SCREENHEIGHT-100);
+    self.tableView.frame=CGRectMake(0, 64, SCREENWIDTH, SCREENHEIGHT-100);
     self.tableView.showsHorizontalScrollIndicator=NO;
     self.tableView.delegate=self;
     self.tableView.dataSource=self;

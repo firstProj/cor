@@ -135,9 +135,9 @@
 		1672A1091DF93539002A791D /* 返回1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "返回1.png"; sourceTree = "<group>"; };
 		1672A10B1DF93539002A791D /* DengLuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DengLuViewController.h; sourceTree = "<group>"; };
 		1672A10C1DF93539002A791D /* DengLuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DengLuViewController.m; sourceTree = "<group>"; };
-		1672A10D1DF93539002A791D /* GUANKANTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GUANKANTableViewCell.h; sourceTree = "<group>"; };
-		1672A10E1DF93539002A791D /* GUANKANTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GUANKANTableViewCell.m; sourceTree = "<group>"; };
-		1672A10F1DF93539002A791D /* GUANKANTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GUANKANTableViewCell.xib; sourceTree = "<group>"; };
+		1672A10D1DF93539002A791D /* GUANKANTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GUANKANTableViewCell.h; path = ../controller/GUANKANTableViewCell.h; sourceTree = "<group>"; };
+		1672A10E1DF93539002A791D /* GUANKANTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GUANKANTableViewCell.m; path = ../controller/GUANKANTableViewCell.m; sourceTree = "<group>"; };
+		1672A10F1DF93539002A791D /* GUANKANTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GUANKANTableViewCell.xib; path = ../controller/GUANKANTableViewCell.xib; sourceTree = "<group>"; };
 		1672A1101DF93539002A791D /* GUANKANViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GUANKANViewController.h; sourceTree = "<group>"; };
 		1672A1111DF93539002A791D /* GUANKANViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GUANKANViewController.m; sourceTree = "<group>"; };
 		1672A1121DF93539002A791D /* QUDENGLUViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QUDENGLUViewController.h; sourceTree = "<group>"; };
@@ -335,9 +335,6 @@
 			children = (
 				1672A10B1DF93539002A791D /* DengLuViewController.h */,
 				1672A10C1DF93539002A791D /* DengLuViewController.m */,
-				1672A10D1DF93539002A791D /* GUANKANTableViewCell.h */,
-				1672A10E1DF93539002A791D /* GUANKANTableViewCell.m */,
-				1672A10F1DF93539002A791D /* GUANKANTableViewCell.xib */,
 				1672A1101DF93539002A791D /* GUANKANViewController.h */,
 				1672A1111DF93539002A791D /* GUANKANViewController.m */,
 				1672A1121DF93539002A791D /* QUDENGLUViewController.h */,
@@ -370,6 +367,9 @@
 		1672A1231DF93539002A791D /* view */ = {
 			isa = PBXGroup;
 			children = (
+				1672A10D1DF93539002A791D /* GUANKANTableViewCell.h */,
+				1672A10E1DF93539002A791D /* GUANKANTableViewCell.m */,
+				1672A10F1DF93539002A791D /* GUANKANTableViewCell.xib */,
 				1672A1241DF93539002A791D /* ButtonView.h */,
 				1672A1251DF93539002A791D /* ButtonView.m */,
 				1672A1261DF93539002A791D /* WOTableViewCell.h */,

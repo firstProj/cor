@@ -21,9 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
     [self setupSubs];
-    
     
     // Do any additional setup after loading the view.
 }
@@ -64,8 +62,6 @@
         make.left.equalTo(view.mas_left).offset(10);
     }];
     
-    
-    
     UIButton * button1 = [UIButton buttonWithType:UIButtonTypeCustom];
     [button1 setTitle:@"意见反馈" forState:UIControlStateNormal];
     [button1 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
@@ -84,8 +80,6 @@
     
     UIImageView * imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"表尾.png"]];
     tableView.tableFooterView = imageView;
-    
-    
     
     [tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
     
